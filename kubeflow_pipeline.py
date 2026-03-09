@@ -35,7 +35,7 @@ def preprocess_data(input_csv:Input[Dataset],output_train:Output[Dataset],output
     print("initial dataset shape:", df.shape)
     print("Missing values before preprocessing:\n",df.isnull().sum())
     #handle missing values
-    if df.isnul().values.any():
+    if df.isnull().values.any():
         print("Missing values detected. Handling them...")
         df = df.dropna() 
     

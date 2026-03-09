@@ -187,7 +187,7 @@ deploymentSpec:
           \n    #load dataset\n    df = pd.read_csv(input_csv.path)\n\n    # Debug:\
           \ Check for NaN values\n    print(\"initial dataset shape:\", df.shape)\n\
           \    print(\"Missing values before preprocessing:\\n\",df.isnull().sum())\n\
-          \    #handle missing values\n    if df.isnul().values.any():\n        print(\"\
+          \    #handle missing values\n    if df.isnull().values.any():\n        print(\"\
           Missing values detected. Handling them...\")\n        df = df.dropna() \n\
           \n    # Validate that there are no NaNs in the target column\n    assert\
           \ not df['target'].isnull().any(), \"Target column contains NaN values after\
